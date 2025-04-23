@@ -1,0 +1,141 @@
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
+import { BsArrowDown } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { SiHappycow } from "react-icons/si";
+
+export default function Hero() {
+  return (
+    <section
+      
+      className="flex items-center justify-center text-black md:mt-14 mt-10"
+    >
+      <div className="text-center max-w-2xl px-4 sm:px-10">
+        {/* Heading */}
+
+        <div className="flex flex-row justify-center gap-4 items-center group">
+          <p className="md:text-5xl sm:text-2xl text-2xl text-gray-600 font-light mb-4">
+            Hi, I'm{" "}
+            <a
+              href="https://www.linkedin.com/in/your-linkedin-url"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-block cursor-pointer"
+            >
+              <span className="text-black font-semibold">Yuvraj Karna</span>
+              {/* underline effect on hover */}
+              <span className="absolute left-0 -bottom-1 w-full h-1 bg-black scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+            </a>
+          </p>
+
+          {/* HappyCow icon with hover effects triggered by the parent group */}
+          <SiHappycow className="w-12 h-12 transition-all duration-300 group-hover:scale-125 group-hover:rotate-6 group-hover:translate-x-2 group-hover:-translate-y-2" />
+        </div>
+
+        <p className="md:text-3xl sm:text-2xl text-xl font-normal mb-6 tracking-widest">
+          Software Engineer • Full Stack Developer
+        </p>
+
+        {/* About Summary */}
+        <p className="text-gray-600  text-lg leading-relaxed mb-8 tracking-widest md:text-xl">
+          Passionate about building{" "}
+          <span className="text-black font-medium hover:underline">
+            scalable web apps
+          </span>
+          , crafting clean and{" "}
+          <span className="text-black font-medium hover:underline">
+            intuitive UI
+          </span>
+          , and bringing ideas to life with
+          <span className="text-black font-medium hover:underline">
+            {" "}
+            JavaScript,
+          </span>{" "}
+          <span className="text-black font-medium hover:underline">
+            {" "}
+            NodeJs,
+          </span>{" "}
+          <span className="text-black font-medium hover:underline">
+            {" "}
+            ReactJs
+          </span>{" "}
+          and
+          <span className="text-black font-medium hover:underline">
+            {" "}
+            Python
+          </span>
+          .
+        </p>
+
+        {/* Social Links */}
+        <div className="flex justify-center gap-6 text-2xl text-black">
+          <a
+            href="https://github.com/yuvrajkarna2717"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 hover:text-gray-700 transition"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yuvrajkarna2717"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 hover:text-gray-700 transition"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 hover:text-gray-700 transition"
+          >
+            <FaFacebook />
+          </a>
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 hover:text-gray-700 transition"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 hover:text-gray-700 transition"
+          >
+            <FaTwitter />
+          </a>
+        </div>
+        <button className="bg-black text-white px-6 py-2 mt-10 rounded-full ">
+          <a
+            href="/resume/YuvrajKarna.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </button>
+
+        <div className="flex items-center justify-center sm:mt-5 lg:mt-10 mt-4">
+          <button className="flex flex-col justify-center items-center gap-3">
+            <Link to="/about" className="text-black text-md hover:underline">
+              See more about me
+            </Link>
+            <div className="text-black text-3xl mt-1">
+              <BsArrowDown className="animate-arrow-bounce" />
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
