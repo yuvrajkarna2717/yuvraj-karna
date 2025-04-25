@@ -1,5 +1,10 @@
 // src/blog/BlogPost.tsx
 
+declare global {
+  interface Window {
+    Buffer: typeof Buffer;
+  }
+}
 // Polyfill Buffer for browser
 import { Buffer } from "buffer";
 if (!window.Buffer) window.Buffer = Buffer;
