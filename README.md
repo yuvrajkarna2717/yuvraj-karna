@@ -1,35 +1,36 @@
-# Yuvraj Karna – Portfolio 💼
+# Sorting Visualizer 🌀
 
-A clean, responsive, and blazing-fast **developer portfolio website** built with **React**, **TypeScript**, and **Vite**. This showcases my projects, skills, experience, and includes smooth animations and smart design — optimized for SEO and mobile.
+An interactive visual tool to learn and explore sorting algorithms like **Quick Sort**, **Merge Sort**, **Bubble Sort**, and more — powered by **React**, **TypeScript**, and **Vite**.
 
-![Portfolio Preview](https://yuvraj-karna.vercel.app/preview.png)
+![Sorting Visualizer Preview](https://sorting-visualizer-rp5w.onrender.com/preview.png)
 
-## 🚀 Live Site
+## ✨ Features
 
-👉 [https://yuvraj-karna.vercel.app](https://yuvraj-karna.vercel.app)
+- Visualize popular sorting algorithms in real-time
+- Beautiful animated transitions and color-coded states
+- Responsive design with a stunning UI using TailwindCSS
+- Algorithm statistics (e.g., total runs, elements sorted, most used)
+- Built with Vite for fast development experience
+- SEO-optimized meta tags and Open Graph sharing
+- GitHub and LinkedIn links included
 
-## 🌟 Features
+## 🚀 Live Demo
 
-- ⚡ Smooth in-page scrolling & transitions
-- 📱 Mobile-first responsive design
-- 🛠️ Built using React 18 + TypeScript + Vite
-- 🎨 TailwindCSS for styling
-- 🔍 SEO optimized with full meta tags & Open Graph
-- 📷 Social media share-ready (OG/Twitter image)
-- 🧠 Projects, Experience, Skills, and About section
-- 🔗 Linked GitHub, LinkedIn, and Resume
+👉 [Live App](https://sorting-visualizer-rp5w.onrender.com/)
 
-## 🧰 Tech Stack
+## 📦 Tech Stack
 
-- **Frontend:** React + TypeScript
-- **Styling:** TailwindCSS
-- **Build Tool:** Vite
-- **Deployment:** Vercel
+- ⚛️ React 18
+- ⛓ TypeScript
+- ⚡ Vite
+- 💅 TailwindCSS
+- 📊 Custom Stats API with Node.js + Express
+- 🔍 SEO-ready with meta tags and OG images
 
-## 🛠️ Getting Started Locally
+## 🛠️ Getting Started
 
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/portfolio.git
-cd portfolio
+git clone https://github.com/your-username/sorting-visualizer.git
+cd sorting-visualizer

@@ -11,10 +11,7 @@ import { SiHappycow } from "react-icons/si";
 
 export default function Hero() {
   return (
-    <section
-      
-      className="flex items-center justify-center text-black md:mt-14 mt-10"
-    >
+    <section className="flex items-center justify-center text-black md:mt-14 mt-10">
       <div className="text-center max-w-2xl px-4 sm:px-10">
         {/* Heading */}
 
@@ -32,9 +29,13 @@ export default function Hero() {
               <span className="absolute left-0 -bottom-1 w-full h-1 bg-black scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
             </a>
           </p>
+          
+          {/* For mobile screens only */}
+          <SiHappycow className="block md:hidden w-12 h-12 animate-wiggle transition-all duration-300 group-hover:scale-125 group-hover:rotate-6 group-hover:translate-x-2 group-hover:-translate-y-2" />
 
-          {/* HappyCow icon with hover effects triggered by the parent group */}
-          <SiHappycow className="w-12 h-12 transition-all duration-300 group-hover:scale-125 group-hover:rotate-6 group-hover:translate-x-2 group-hover:-translate-y-2" />
+          {/* For md and above */}
+          <SiHappycow className="hidden md:block w-12 h-12 transition-all duration-300 group-hover:scale-125 group-hover:rotate-6 group-hover:translate-x-2 group-hover:-translate-y-2" />
+
         </div>
 
         <p className="md:text-3xl sm:text-2xl text-xl font-normal mb-6 tracking-widest">
