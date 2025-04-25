@@ -1,11 +1,12 @@
 import { useState } from "react";
 import flower from "../assets/flower.svg";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", to: "#home" },
+    { name: "Blog", to: "/blog" },
     { name: "About Me", to: "#about" },
     { name: "Projects", to: "#projects" },
     { name: "Experience", to: "#experience" },
@@ -20,23 +21,33 @@ export default function Navbar() {
         <ul className="hidden md:flex space-x-8">
           {navItems.map((item) => (
             <li key={item.to}>
-              <a
-                href={item.to}
-                onClick={() => setIsOpen(false)}
-                className="block text-black transition-all duration-200 transform hover:underline hover:translate-x-2 hover:scale-110"
-              >
-                {item.name}
-              </a>
+              {item.to === "/blog" ? (
+                <Link
+                  to={item.to}
+                  onClick={() => setIsOpen(false)}
+                  className="block text-black transition-all duration-200 transform hover:underline hover:translate-x-2 hover:scale-110"
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  href={item.to}
+                  onClick={() => setIsOpen(false)}
+                  className="block text-black transition-all duration-200 transform hover:underline hover:translate-x-2 hover:scale-110"
+                >
+                  {item.name}
+                </a>
+              )}
             </li>
           ))}
         </ul>
 
-        {/* Mobile Toggle */}
+        {/* Mobile Menu Toggle Button */}
         <button
           className="md:hidden text-2xl z-50"
           onClick={() => {
-            console.log("clicked")
-            setIsOpen(!isOpen)
+            console.log("clicked");
+            setIsOpen(!isOpen);
           }}
         >
           ☰
@@ -45,17 +56,26 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-       <ul className="md:hidden fixed top-20 left-0 w-full bg-white text-black z-[9999] shadow-md py-4 px-10 space-y-4">
-
+        <ul className="md:hidden fixed top-20 left-0 w-full bg-white text-black z-[9999] shadow-md py-4 px-10 space-y-4">
           {navItems.map((item) => (
             <li key={item.to}>
-              <a
-                href={item.to}
-                onClick={() => setIsOpen(false)}
-                className="block text-black transition-all duration-200 transform hover:underline hover:translate-x-1"
-              >
-                {item.name}
-              </a>
+              {item.to === "/blog" ? (
+                <Link
+                  to={item.to}
+                  onClick={() => setIsOpen(false)}
+                  className="block text-black transition-all duration-200 transform hover:underline hover:translate-x-2 hover:scale-110"
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  href={item.to}
+                  onClick={() => setIsOpen(false)}
+                  className="block text-black transition-all duration-200 transform hover:underline hover:translate-x-2 hover:scale-110"
+                >
+                  {item.name}
+                </a>
+              )}
             </li>
           ))}
         </ul>
