@@ -39,11 +39,15 @@ export default function BlogPost() {
     return <div className="p-8 text-red-500">Blog post not found.</div>;
 
   return (
-    <div className="relative min-h-screen w-full font-sans flex justify-center md:py-8 sm:py-4 py-0 px-0 md:px-8 sm:px-4">
+    <div className="relative min-h-screen bg-white w-full font-sans flex justify-center">
+      {/* Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] z-0 pointer-events-none" />
 
-      <div className="prose prose-lg dark:prose-invert ">
-        <ReactMarkdown>{content}</ReactMarkdown>
+      {/* Content Container */}
+      <div className="w-full flex justify-center">
+        <div className="prose prose-lg text-black border rounded-lg shadow-lg w-full md:max-w-5xl px-8 py-8 max-h-screen overflow-y-auto z-10 bg-white">
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </div>
       </div>
     </div>
   );
