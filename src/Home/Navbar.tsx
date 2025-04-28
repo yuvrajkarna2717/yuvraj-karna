@@ -1,12 +1,10 @@
 import { useState } from "react";
 import flower from "../assets/flower.svg";
-import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Blog", to: "/blog" },
     { name: "About Me", to: "#about" },
     { name: "Projects", to: "#projects" },
     { name: "Experience", to: "#experience" },
@@ -21,23 +19,13 @@ export default function Navbar() {
         <ul className="hidden md:flex space-x-8">
           {navItems.map((item) => (
             <li key={item.to}>
-              {item.to === "/blog" ? (
-                <Link
-                  to={item.to}
-                  onClick={() => setIsOpen(false)}
-                  className="block text-black transition-all duration-200 transform hover:underline hover:translate-x-2 hover:scale-110"
-                >
-                  {item.name}
-                </Link>
-              ) : (
-                <a
-                  href={item.to}
-                  onClick={() => setIsOpen(false)}
-                  className="block text-black transition-all duration-200 transform hover:underline hover:translate-x-2 hover:scale-110"
-                >
-                  {item.name}
-                </a>
-              )}
+              <a
+                href={item.to}
+                onClick={() => setIsOpen(false)}
+                className="block text-black transition-all duration-200 transform hover:underline hover:translate-x-2 hover:scale-110"
+              >
+                {item.name}
+              </a>
             </li>
           ))}
         </ul>
@@ -59,23 +47,13 @@ export default function Navbar() {
         <ul className="md:hidden fixed top-20 left-0 w-full bg-white text-black z-[9999] shadow-md py-4 px-10 space-y-4">
           {navItems.map((item) => (
             <li key={item.to}>
-              {item.to === "/blog" ? (
-                <Link
-                  to={item.to}
-                  onClick={() => setIsOpen(false)}
-                  className="block text-black transition-all duration-200 transform hover:underline hover:translate-x-2 hover:scale-110"
-                >
-                  {item.name}
-                </Link>
-              ) : (
-                <a
-                  href={item.to}
-                  onClick={() => setIsOpen(false)}
-                  className="block text-black transition-all duration-200 transform hover:underline hover:translate-x-2 hover:scale-110"
-                >
-                  {item.name}
-                </a>
-              )}
+              <a
+                href={item.to}
+                onClick={() => setIsOpen(false)}
+                className="block text-black transition-all duration-200 transform hover:underline hover:translate-x-2 hover:scale-110"
+              >
+                {item.name}
+              </a>
             </li>
           ))}
         </ul>
