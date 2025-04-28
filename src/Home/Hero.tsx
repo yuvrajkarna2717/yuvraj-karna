@@ -19,7 +19,7 @@ export default function Hero() {
           <p className="md:text-5xl sm:text-2xl text-2xl text-gray-600 font-light mb-4">
             Hi, I'm{" "}
             <a
-              href="https://www.linkedin.com/in/your-linkedin-url"
+              href="https://www.linkedin.com/in/yuvrajkarna27"
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-block cursor-pointer"
@@ -84,15 +84,16 @@ export default function Hero() {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/yuvrajkarna2717"
+            href="https://www.linkedin.com/in/yuvrajkarna27"
             target="_blank"
+
             rel="noopener noreferrer"
             className="hover:scale-110 hover:text-gray-700 transition"
           >
             <FaLinkedin />
           </a>
           <a
-            href="https://facebook.com/"
+            href="https://facebook.com/share/1dtHplniqd"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-110 hover:text-gray-700 transition"
@@ -100,7 +101,7 @@ export default function Hero() {
             <FaFacebook />
           </a>
           <a
-            href="https://instagram.com/"
+            href="https://instagram.com/yuvrajkarna27"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-110 hover:text-gray-700 transition"
@@ -108,7 +109,7 @@ export default function Hero() {
             <FaInstagram />
           </a>
           <a
-            href="https://twitter.com/"
+            href="https://x.com/yuvrajkarna"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-110 hover:text-gray-700 transition"
