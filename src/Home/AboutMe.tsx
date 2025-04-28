@@ -23,8 +23,9 @@ export function AboutMe() {
   return (
     <section
       id="about"
-      className="w-full md:py-20 py-10 px-6 md:px-24 bg-white text-gray-800"
+      className="w-full md:py-140 py-7 px-6 md:px-24 bg-white text-gray-800"
     >
+     
       <div className="max-w-4xl mx-auto space-y-10">
         {/* Heading */}
         <div className="text-center">
@@ -63,6 +64,8 @@ export function AboutMe() {
           problems into elegant, intuitive solutions.
         </p>
 
+        <div className="flex justify-center items-center text-center italic md:text-3xl">Want to collaborate or contact ?</div>
+
         {/* Info Section */}
         <div
           className={`grid grid-cols-1 md:grid-cols-3 gap-6 text-center transition-opacity duration-700 ${
@@ -71,11 +74,11 @@ export function AboutMe() {
         >
           <div className="transition-transform hover:scale-105">
             <p className="text-sm text-gray-500">Phone</p>
-            <p className="text-lg font-medium">+91-9876543210</p>
+            <p className="text-lg font-medium">+91 7700833277</p>
           </div>
           <div className="transition-transform hover:scale-105">
             <p className="text-sm text-gray-500">Email</p>
-            <p className="text-lg font-medium">yuvrajkarna2717@gmail.com</p>
+            <p className="text-lg font-medium">yuvrajkarna.code@gmail.com</p>
           </div>
           <div className="transition-transform hover:scale-105">
             <p className="text-sm text-gray-500">Location</p>
