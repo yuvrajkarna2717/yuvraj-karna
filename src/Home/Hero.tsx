@@ -29,13 +29,12 @@ export default function Hero() {
               <span className="absolute left-0 -bottom-1 w-full h-1 bg-black scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
             </a>
           </p>
-          
+
           {/* For mobile screens only */}
           <SiHappycow className="block md:hidden w-12 h-12 animate-wiggle transition-all duration-300 group-hover:scale-125 group-hover:rotate-6 group-hover:translate-x-2 group-hover:-translate-y-2" />
 
           {/* For md and above */}
           <SiHappycow className="hidden md:block w-12 h-12 transition-all duration-300 group-hover:scale-125 group-hover:rotate-6 group-hover:translate-x-2 group-hover:-translate-y-2" />
-
         </div>
 
         <p className="md:text-3xl sm:text-2xl text-xl font-normal mb-6 tracking-widest">
@@ -43,34 +42,38 @@ export default function Hero() {
         </p>
 
         {/* About Summary */}
-        <p className="text-gray-600  text-lg leading-relaxed mb-8 tracking-widest md:text-xl">
-          Passionate about building{" "}
+        <p className="text-gray-600 text-lg leading-relaxed mb-8 tracking-widest md:text-xl ">
+          Specializing in creating{" "}
           <span className="text-black font-medium hover:underline">
-            scalable web apps
-          </span>
-          , crafting clean and{" "}
-          <span className="text-black font-medium hover:underline">
-            intuitive UI
-          </span>
-          , and bringing ideas to life with
-          <span className="text-black font-medium hover:underline">
-            {" "}
-            JavaScript,
+            scalable web applications
           </span>{" "}
+          with{" "}
           <span className="text-black font-medium hover:underline">
-            {" "}
-            NodeJs,
+            clean architecture
           </span>{" "}
+          and{" "}
           <span className="text-black font-medium hover:underline">
-            {" "}
-            ReactJs
-          </span>{" "}
-          and
-          <span className="text-black font-medium hover:underline">
-            {" "}
-            Python
+            responsive interfaces.
           </span>
-          .
+          <p className="hidden md:block">
+            Experienced in bridging{" "}
+            <span className="text-black font-medium hover:underline">
+              multiple development paradigms
+            </span>{" "}
+            to deliver{" "}
+            <span className="text-black font-medium hover:underline">
+              optimized solutions
+            </span>{" "}
+            that balance{" "}
+            <span className="text-black font-medium hover:underline">
+              technical excellence
+            </span>{" "}
+            with{" "}
+            <span className="text-black font-medium hover:underline">
+              exceptional user experience
+            </span>
+            .
+          </p>
         </p>
 
         {/* Social Links */}
@@ -86,7 +89,6 @@ export default function Hero() {
           <a
             href="https://www.linkedin.com/in/yuvrajkarna27"
             target="_blank"
-
             rel="noopener noreferrer"
             className="hover:scale-110 hover:text-gray-700 transition"
           >
