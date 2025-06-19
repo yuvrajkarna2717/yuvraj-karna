@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Project from "./Project";
+import SkillsSlider from "./SkillsSlider";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] z-0 pointer-events-none" />
       <Navbar />
       <Hero />
+      <SkillsSlider/>
       <Experience />
       <Project />
       <AboutMe />
